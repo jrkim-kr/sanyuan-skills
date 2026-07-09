@@ -69,20 +69,24 @@ On first `/book-study <book-name>`:
    - How familiar are you with this domain? (beginner / some background / experienced)
    - Rough timeline to finish?
 
-3. Generate `meta.md`:
+3. **Classify & recommend a reading methodology**:
+   → Load [references/reading-methodologies.md](references/reading-methodologies.md). Classify the book (practical / theoretical / technical / history / philosophy / fiction / reference), present the recommended reading approach to the user in plain language (order, pace, what to focus on, how mastery will be tested), and confirm before proceeding. The chosen approach shapes all later phases.
+
+4. Generate `meta.md`:
 
 ```markdown
 # <Book Title>
 
 - **Author**: XXX
 - **Category**: Psychology / Economics / Tech / ...
+- **Reading Approach**: (from references/reading-methodologies.md — e.g. "Practical: non-linear, application-first")
 - **Status**: In Progress
 - **Started**: YYYY-MM-DD
 - **Core Question**: What question does this book try to answer?
 - **One-line Review**: (fill after finishing)
 ```
 
-4. Generate `study-plan.md`:
+5. Generate `study-plan.md`:
 
 ```markdown
 # <Book Title> Study Plan
@@ -114,7 +118,7 @@ On first `/book-study <book-name>`:
 - **Next Action**: guide / read / ingest / test / review
 ```
 
-5. Generate `mastery-map.md`:
+6. Generate `mastery-map.md`:
 
 ```markdown
 # <Book Title> Mastery Map
